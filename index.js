@@ -22,7 +22,7 @@ client.connect(err => {
  
   app.post("/addProduct",(req, res) => {
     const product = req.body;
-    console.log(product);
+    // console.log(product);
     productCollection.insertOne(product)
     .then (result => {
       console.log('Data added successfully');
